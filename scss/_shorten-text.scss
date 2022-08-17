@@ -1,0 +1,14 @@
+@mixin text-overflow($lines) {
+    @content;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+}
+
+p.card-description {
+    @include text-overflow(5);
+}
+
+

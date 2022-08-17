@@ -1,0 +1,64 @@
+@import url("https://fonts.cdnfonts.com/css/gotham-rounded");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham Rounded", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F3639;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-container .card {
+  background-color: white;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card header {
+  height: 125px;
+  background-color: #eee;
+}
+
+.card .card-content {
+  padding: 1.15rem;
+}
+
+.card .card-content h2 {
+  color: rgb(71, 76, 82);
+}
+
+.card .card-content p.card-description {
+  color: rgb(102, 112, 123);
+  line-height: 1.4rem;
+}
+
+p.card-description {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+/*# sourceMappingURL=styles.css.map */
